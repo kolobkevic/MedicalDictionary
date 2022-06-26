@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kolobkevic.medical_dictionary.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+    <VBox fx:id="mainPanel">
+        <HBox VBox.vgrow="ALWAYS" />
+        <HBox VBox.vgrow="ALWAYS" />
+    </VBox>
+      <ListView id="wordsList" fx:id="wordsList" layoutX="372.0" layoutY="74.0" minWidth="90.0" prefHeight="408.0" prefWidth="171.0" />
+   <TextField id="inputText" layoutX="14.0" layoutY="74.0" prefHeight="25.0" prefWidth="184.0" />
+   <Button id="ossetianA" layoutX="14.0" layoutY="43.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" text="L1" />
+   <TextField id="category" editable="false" layoutX="14.0" layoutY="114.0" prefHeight="25.0" prefWidth="320.0" />
+    <MenuBar layoutX="6.0" layoutY="5.0" prefHeight="25.0" prefWidth="230.0">
+        <Menu mnemonicParsing="false" text="Файл">
+            <MenuItem mnemonicParsing="false" text="Закрыть"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Настройки">
+            <Menu mnemonicParsing="false" text="Сменить язык">
+                <MenuItem id="menuEnglish" mnemonicParsing="false" text="Английский"/>
+                <MenuItem id="menuLatin" mnemonicParsing="false" text="Латинский"/>
+                <MenuItem id="menuGerman" mnemonicParsing="false" text="Немецкий"/>
+                <MenuItem id="menuOssetian" mnemonicParsing="false" text="Осетинский"/>
+                <MenuItem id="menuRussian" mnemonicParsing="false" text="Русский"/>
+            </Menu>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" text="About"/>
+        </Menu>
+    </MenuBar>
+   <TextArea id="translationTextArea" editable="false" layoutX="14.0" layoutY="158.0" prefHeight="200.0" prefWidth="320.0" />
+   <TextArea id="definitionTextArea" editable="false" layoutX="14.0" layoutY="366.0" prefHeight="117.0" prefWidth="320.0" />
+   <ChoiceBox id="languageChoiceBox" layoutX="209.0" layoutY="74.0" prefHeight="25.0" prefWidth="125.0" />
+   <Button id="germanA" layoutX="54.0" layoutY="43.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" text="Search" />
+   <Button id="germanO" layoutX="94.0" layoutY="43.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" text="Search" />
+   <Button id="germanU" layoutX="134.0" layoutY="43.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" text="Search" />
+   <Button id="germanB" layoutX="174.0" layoutY="43.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" text="Search" />
+</AnchorPane>
